@@ -14,7 +14,7 @@ I am mentioning here, so that you don't need to find some other place to find th
 
 ### standard-time-meridian
 #### Description : 
-Converts *epoch time* to *HH:MM:AM/PM* 12-hour format
+Converts **epoch time** to **HH:MM:AM/PM** 12-hour format
 
 #####HTML
 ````HTML
@@ -73,7 +73,7 @@ Converts *epoch time* to *HH:MM:AM/PM* 12-hour format
 
 ### standard-time-no-meridian
 #### Description :
-Converts *epoch time* to *HH:MM* 24-hour format
+Converts **epoch time** to **HH:MM** 24-hour format
 
 ##### HTML
 ````html
@@ -127,7 +127,7 @@ Converts *epoch time* to *HH:MM* 24-hour format
 
 ### date-string-to-epoch
 #### Description :
-Converts *string* format to *epoch time*
+Converts **string** format to **epoch time**
 
 ##### HTML
 ````html

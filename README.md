@@ -17,6 +17,7 @@ I am mentioning here, so that you don't need to find some other place to find th
 Converts **Epoch Time** to **HH:MM:AM/PM** 12-hour format.
 
 [Know more about Epoch Converter](http://www.epochconverter.com/).
+[Demo](http://plnkr.co/edit/xuPoZhftWFtr9PufyLQT)
 
 ##### Controller
 ````javascript
@@ -81,6 +82,9 @@ $scope.epochTime = 12600;
 #### Description
 Converts **Epoch Time** to **HH:MM** 24-hour format
 
+[Demo](http://plnkr.co/edit/jT0uZ5ULIIRZDnBwaUfj)
+
+
 ##### Controller
 ````javascript
 $scope.epochTime = 12600;
@@ -140,7 +144,7 @@ $scope.epochTime = 12600;
 #### Description
 Converts **string** format to **Epoch Time**
 
-[Click here for demo](http://plnkr.co/edit/wuiEuFCkeF8mZmZj11G2)
+[Demo](http://plnkr.co/edit/wuiEuFCkeF8mZmZj11G2)
 
 ##### Controller
 In you controller if you have a date string in the below format, then you can use this directive.

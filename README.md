@@ -11,6 +11,8 @@ I am mentioning here, so that you don't need to find some other place to find th
 - [standard-time-no-meridian](#standard-time-no-meridian)
 - [date-string-to-epoch](#date-string-to-epoch)
 - [ionic-time-picker](#ionic-time-picker)
+- [tooltip-follow-cursor](#tooltip-follow-cursor)
+
 
 ### standard-time-meridian
 #### Description 
@@ -409,6 +411,9 @@ A direcive which makes a tooltip follows the cursor.
   };
 })
 ````
+
+*[Back to top](#description)*
+
 #### NOTE
 Copyright (c) 2015 [Rajeshwar Patlolla](https://github.com/rajeshwarpatlolla)
 

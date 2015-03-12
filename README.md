@@ -12,6 +12,7 @@ I am mentioning here, so that you don't need to find some other place to find th
 - [date-string-to-epoch](#date-string-to-epoch)
 - [ionic-time-picker](#ionic-time-picker)
 - [tooltip-follow-cursor](#tooltip-follow-cursor)
+- [check-with-current-time](#check-with-current-time)
 
 
 ### standard-time-meridian
@@ -390,9 +391,9 @@ A direcive which makes a tooltip follows the cursor.
 ##### HTML
 ````html
 <div class="tooltipCustom" tooltip-follow-cursor>
-    Hover Mouse
-    <span class="tooltipCustomContent" >This is a tooltip</span>
-  </div>
+  Hover Mouse
+  <span class="tooltipCustomContent" >This is a tooltip</span>
+</div>
 ````
 
 ##### Directive
@@ -410,6 +411,57 @@ A direcive which makes a tooltip follows the cursor.
     }
   };
 })
+````
+
+*[Back to top](#description)*
+
+### check-with-current-time
+#### Description
+A direcive which compares a time string(11:12 PM), with the current time.
+
+[Demo](http://plnkr.co/edit/Ms886sg3LwD5r7O0JzLg?p=preview)
+ 
+##### HTML
+````html
+<div check-with-current-time="11:12 PM"></div>
+````
+
+##### Directive
+````javascript
+.directive('checkWithCurrentTime', function() {
+  return {
+    scope: '=',
+    template: '{{result}}',
+    link: function(scope, element, attrs) {
+      var presentHours = (new Date()).getHours();
+      var presentMinutes = (new Date()).getMinutes();
+      var prevTime = attrs.checkWithCurrentTime;
+      var timeArray = prevTime.split(/[ :]+/);
+
+      timeArray[0] = parseInt(timeArray[0]);
+      timeArray[1] = parseInt(timeArray[1]);
+
+      if (timeArray[2] === 'PM') {
+        timeArray[0] += 12;
+      }
+
+      if (presentHours < timeArray[0]) {
+        result = 'Greater than current time';
+      } else {
+        result = 'Less than current time';
+      }
+
+      if ((presentHours === timeArray[0]) && (presentMinutes < timeArray[1])) {
+        result = 'Greater than current time';
+      }
+
+      if ((presentHours === timeArray[0]) && (presentMinutes === timeArray[1])) {
+        result = 'Both are same.';
+      }
+      scope.result = result;
+    }
+  }
+});
 ````
 
 *[Back to top](#description)*

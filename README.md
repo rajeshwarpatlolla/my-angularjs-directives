@@ -190,10 +190,15 @@ $scope.dateString = 'Jan 1, 2015';
 It was initially implemented as a directive and later converted to a **bower component**.
 You can check out the bower component [here](https://github.com/rajeshwarpatlolla/ionic-timepicker)
 
+##### Controller
+````javascript
+$scope.epochTime = 12600;
+ ````
+ 
 ##### HTML
 ````html
-<ionic-time-picker etime="slots[0].epochTime" format="12" step="15">    
-    {{slots[0].epochTime}}
+<ionic-time-picker etime="epochTime" format="12" step="15">    
+    {{epochTime}}
 </ionic-time-picker>
 ````
 

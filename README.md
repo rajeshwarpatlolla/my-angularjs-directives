@@ -69,7 +69,7 @@ Converts *epoch time* to *HH:MM:AM/PM* 12-hour format
 })
 ````
 
-*[Back to top](#Description)*
+*[Back to top](#description)*
 
 ### standard-time-no-meridian
 #### Description :
@@ -123,7 +123,7 @@ Converts *epoch time* to *HH:MM* 24-hour format
 })
 ````
 
-*[Back to top](#Description)*
+*[Back to top](#description)*
 
 ### date-string-to-epoch
 #### Description :
@@ -159,7 +159,7 @@ Converts *string* format to *epoch time*
 });
 ````
 
-*[Back to top](#Description)*
+*[Back to top](#description)*
 
 ### ionic-time-picker
 #### Description :
@@ -334,4 +334,4 @@ You can check out the bower component [here](https://github.com/rajeshwarpatloll
 });
 ````
 
-*[Back to top](#Description)*
+*[Back to top](#description)*

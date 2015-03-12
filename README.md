@@ -27,7 +27,7 @@ $scope.epochTime = 12600;
 <standard-time-meridian etime='epochTime'></standard-time-meridian>
 ````
 
-##### Directive Definition
+##### Directive
 ````javascript
 .directive('standardTimeMeridian', function() {
   return {
@@ -91,7 +91,7 @@ $scope.epochTime = 12600;
 <standard-time-no-meridian etime='epochTime'></standard-time-no-meridian>
 ````
 
-##### Directive Definition
+##### Directive
 ````javascript
 .directive('standardTimeNoMeridian', function() {
   return {
@@ -155,7 +155,7 @@ $scope.dateString = 'Jan 1, 2015';
 <span date-string-to-epoch='{{dateString}}'></span>
 ````
 
-##### Directive Definition
+##### Directive
 
 
 ````javascript
@@ -197,7 +197,7 @@ You can check out the bower component [here](https://github.com/rajeshwarpatloll
 </ionic-time-picker>
 ````
 
-##### Directive Definition
+##### Directive
 ````javascript
 .directive('ionicTimePicker', function($ionicPopup) {
   return {

@@ -9,6 +9,8 @@ I am mentioning here, so that you don't need to find some other place to find th
 
 - [standard-time-meridian](#standard-time-meridian)
 - [standard-time-no-meridian](#standard-time-no-meridian)
+- [date-string-to-epoch](#date-string-to-epoch)
+- [ionic-time-picker](#ionic-time-picker)
 
 ### standard-time-meridian
 #### Description : 
@@ -67,6 +69,8 @@ Converts *epoch time* to *HH:MM:AM/PM* 12-hour format
 })
 ````
 
+*[Back to top](#Description)*
+
 ### standard-time-no-meridian
 #### Description :
 Converts *epoch time* to *HH:MM* 24-hour format
@@ -119,6 +123,8 @@ Converts *epoch time* to *HH:MM* 24-hour format
 })
 ````
 
+*[Back to top](#Description)*
+
 ### date-string-to-epoch
 #### Description :
 Converts *string* format to *epoch time*
@@ -152,6 +158,8 @@ Converts *string* format to *epoch time*
   }
 });
 ````
+
+*[Back to top](#Description)*
 
 ### ionic-time-picker
 #### Description :
@@ -326,3 +334,4 @@ You can check out the bower component [here](https://github.com/rajeshwarpatloll
 });
 ````
 
+*[Back to top](#Description)*

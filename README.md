@@ -16,7 +16,8 @@ I am mentioning here, so that you don't need to find some other place to find th
 #### Description 
 Converts **Epoch Time** to **HH:MM:AM/PM** 12-hour format.
 
-[Know more about Epoch Converter](http://www.epochconverter.com/).
+[Know more about Epoch Converter](http://www.epochconverter.com/)
+
 [Demo](http://plnkr.co/edit/xuPoZhftWFtr9PufyLQT)
 
 ##### Controller
@@ -193,6 +194,8 @@ $scope.dateString = 'Jan 1, 2015';
 #### Description
 It was initially implemented as a directive and later converted to a **bower component**.
 You can check out the bower component [here](https://github.com/rajeshwarpatlolla/ionic-timepicker)
+
+[Demo](http://rajeshwarpatlolla.github.io/TimePickerForIonicFramework/demo)
 
 ##### Controller
 ````javascript

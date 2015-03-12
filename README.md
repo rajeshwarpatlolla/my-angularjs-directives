@@ -6,7 +6,7 @@ Here i also wants mention the other directives which i have used in few projects
 I am mentioning here, so that you don't need to find some other place to find these directives. 
 
 
-- ### standard-time-meridian
+### standard-time-meridian
 #### Description : 
 Converts *epoch time* to *HH:MM:AM/PM* 12-hour format
 

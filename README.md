@@ -1,11 +1,11 @@
-#Description
+# Description
 
 While i was working on few projects i have come across few situations where i had to write some directives.
 Here i want to mention few of the directives here. These might be useful for you.
 Here i also wants mention the other directives which i have used in few projects, but not created by me.
 I am mentioning here, so that you don't need to find some other place to find these directives. 
 
-##Table of contents
+## List of my directives
 
 - [standard-time-meridian](#standard-time-meridian)
 - [standard-time-no-meridian](#standard-time-no-meridian)
@@ -18,12 +18,12 @@ Converts **Epoch Time** to **HH:MM:AM/PM** 12-hour format.
 
 [Know more about Epoch Converter](http://www.epochconverter.com/).
 
-#####HTML
+##### HTML
 ````HTML
 <standard-time-meridian etime='slots[0].epochTime'></standard-time-meridian>
 ````
 
-#####Java Script
+##### Java Script
 ````javascript
 .directive('standardTimeMeridian', function() {
   return {
@@ -341,3 +341,8 @@ You can check out the bower component [here](https://github.com/rajeshwarpatloll
 ````
 
 *[Back to top](#description)*
+
+#### NOTE : 
+Copyright (c) 2015 [Rajeshwar Patlolla](https://github.com/rajeshwarpatlolla)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software, to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense. 

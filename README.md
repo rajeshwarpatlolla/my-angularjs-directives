@@ -13,7 +13,7 @@ I am mentioning here, so that you don't need to find some other place to find th
 - [ionic-time-picker](#ionic-time-picker)
 
 ### standard-time-meridian
-#### Description : 
+#### Description 
 Converts **Epoch Time** to **HH:MM:AM/PM** 12-hour format.
 
 [Know more about Epoch Converter](http://www.epochconverter.com/).
@@ -78,7 +78,7 @@ $scope.epochTime = 12600;
 *[Back to top](#description)*
 
 ### standard-time-no-meridian
-#### Description :
+#### Description
 Converts **Epoch Time** to **HH:MM** 24-hour format
 
 ##### Controller
@@ -137,7 +137,7 @@ $scope.epochTime = 12600;
 *[Back to top](#description)*
 
 ### date-string-to-epoch
-#### Description :
+#### Description
 Converts **string** format to **Epoch Time**
 
 [Click here for demo](http://plnkr.co/edit/wuiEuFCkeF8mZmZj11G2)
@@ -186,7 +186,7 @@ $scope.dateString = 'Jan 1, 2015';
 *[Back to top](#description)*
 
 ### ionic-time-picker
-#### Description :
+#### Description
 It was initially implemented as a directive and later converted to a **bower component**.
 You can check out the bower component [here](https://github.com/rajeshwarpatlolla/ionic-timepicker)
 
@@ -368,7 +368,7 @@ $scope.epochTime = 12600;
 
 *[Back to top](#description)*
 
-#### NOTE : 
+#### NOTE
 Copyright (c) 2015 [Rajeshwar Patlolla](https://github.com/rajeshwarpatlolla)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software, to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense. 

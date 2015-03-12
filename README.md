@@ -5,6 +5,10 @@ Here i want to mention few of the directives here. These might be useful for you
 Here i also wants mention the other directives which i have used in few projects, but not created by me.
 I am mentioning here, so that you don't need to find some other place to find these directives. 
 
+##Table of contents
+
+- [standard-time-meridian](#standard-time-meridian)
+- [standard-time-no-meridian](#standard-time-no-meridian)
 
 ### standard-time-meridian
 #### Description : 

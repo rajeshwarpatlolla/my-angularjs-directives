@@ -6,16 +6,16 @@ Here i also wants mention the other directives which i have used in few projects
 I am mentioning here, so that you don't need to find some other place to find these directives. 
 
 
-## standard-time-meridian
-### Description : 
+- ### standard-time-meridian
+#### Description : 
 Converts *epoch time* to *HH:MM:AM/PM* 12-hour format
 
-####HTML
+#####HTML
 ````HTML
 <standard-time-meridian etime='slots[0].epochTime'></standard-time-meridian>
 ````
 
-####Java Script
+#####Java Script
 ````javascript
 .directive('standardTimeMeridian', function () {
     return {
@@ -63,16 +63,16 @@ Converts *epoch time* to *HH:MM:AM/PM* 12-hour format
 })
 ````
 
-## standard-time-no-meridian
-### Description :
+### standard-time-no-meridian
+#### Description :
 Converts *epoch time* to *HH:MM* 24-hour format
 
-####HTML
+##### HTML
 ````html
 <standard-time-no-meridian etime='slots[1].epochTime'></standard-time-no-meridian>
 ````
 
-####Java Script
+##### Java Script
 ````javascript
 .directive('standardTimeNoMeridian', function () {
     return {
@@ -115,16 +115,16 @@ Converts *epoch time* to *HH:MM* 24-hour format
 })
 ````
 
-## date-string-to-epoch
-### Description :
+### date-string-to-epoch
+#### Description :
 Converts *string* format to *epoch time*
 
-####HTML
+##### HTML
 ````html
 <span date-string-to-epoch='{{dateString}}'></span>
 ````
 
-####Java Script
+##### Java Script
 ````javascript
 .directive('dateStringToEpoch', function() {
   return {
@@ -149,19 +149,19 @@ Converts *string* format to *epoch time*
 });
 ````
 
-## ionic-time-picker
-### Description :
+### ionic-time-picker
+#### Description :
 It was initially implemented as a directive and later converted to a **bower component**.
 You can check out the bower component [here](https://github.com/rajeshwarpatlolla/ionic-timepicker)
 
-####HTML
+##### HTML
 ````html
 <ionic-time-picker etime="slots[0].epochTime" format="12" step="15">    
     {{slots[0].epochTime}}
 </ionic-time-picker>
 ````
 
-####Java Script
+##### Java Script
 ````javascript
 .directive('ionicTimePicker', function ($ionicPopup) {
     return {

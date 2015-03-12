@@ -15,8 +15,7 @@ I am mentioning here, so that you don't need to find some other place to find th
 ### standard-time-meridian
 #### Description : 
 Converts **Epoch Time** to **HH:MM:AM/PM** 12-hour format.
-
-Know more about [epochconverter](http://www.epochconverter.com/).
+[Know more about Epoch Converter](http://www.epochconverter.com/).
 
 #####HTML
 ````HTML

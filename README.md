@@ -23,7 +23,7 @@ Converts **Epoch Time** to **HH:MM:AM/PM** 12-hour format.
 <standard-time-meridian etime='slots[0].epochTime'></standard-time-meridian>
 ````
 
-##### Java Script
+##### Directive Definition
 ````javascript
 .directive('standardTimeMeridian', function() {
   return {
@@ -82,7 +82,7 @@ Converts **Epoch Time** to **HH:MM** 24-hour format
 <standard-time-no-meridian etime='slots[1].epochTime'></standard-time-no-meridian>
 ````
 
-##### Java Script
+##### Directive Definition
 ````javascript
 .directive('standardTimeNoMeridian', function() {
   return {
@@ -133,18 +133,21 @@ Converts **string** format to **Epoch Time**
 
 [Click here for demo](http://plnkr.co/edit/wuiEuFCkeF8mZmZj11G2)
 
-##### HTML
-````html
-<span date-string-to-epoch='{{dateString}}'></span>
-````
-
-##### Java Script
-
+##### Controller
 In you controller if you have a date string in the below format, then you can use this directive.
 
 ````javascript
 $scope.dateString = 'Jan 1, 2015'
 ````
+
+
+##### HTML
+````html
+<span date-string-to-epoch='{{dateString}}'></span>
+````
+
+##### Directive Definition
+
 
 ````javascript
 .directive('dateStringToEpoch', function() {
@@ -185,7 +188,7 @@ You can check out the bower component [here](https://github.com/rajeshwarpatloll
 </ionic-time-picker>
 ````
 
-##### Java Script
+##### Directive Definition
 ````javascript
 .directive('ionicTimePicker', function($ionicPopup) {
   return {

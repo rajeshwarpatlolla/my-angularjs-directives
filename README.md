@@ -3,7 +3,7 @@
 While i was working on few projects i have come across few situations where i had to write some directives.
 Here i want to mention few of the directives here. These might be useful for you.
 Here i also wants mention the other directives which i have used in few projects, but not created by me.
-I am mentioning here, so that you don't need to find some other place to find these directives. 
+I am mentioning few sirectives here, so that you don't need to find some other place to find these directives. Each and every directive has a demo link.
 
 ## List of my directives
 

@@ -378,6 +378,37 @@ $scope.epochTime = 12600;
 
 *[Back to top](#description)*
 
+### tooltip-follow-cursor
+#### Description
+A direcive which makes a tooltip follows the cursor.
+
+
+[Demo](http://plnkr.co/edit/8p02DDId5ysgRnkgoSBT?p=preview)
+ 
+##### HTML
+````html
+<div class="tooltipCustom" tooltip-follow-cursor>
+    Hover Mouse
+    <span class="tooltipCustomContent" >This is a tooltip</span>
+  </div>
+````
+
+##### Directive
+````javascript
+.directive('tooltipFollowCursor', function() {
+  return {
+    restrict: 'A',
+    link: function(scope, element, attrs) {
+      var x, y;
+      element.on('mousemove', function(e) {
+        x = e.pageX, y = e.pageY;
+        this.children[0].style.top = (y + 15) + 'px';
+        this.children[0].style.left = (x + 15) + 'px';
+      });
+    }
+  };
+})
+````
 #### NOTE
 Copyright (c) 2015 [Rajeshwar Patlolla](https://github.com/rajeshwarpatlolla)
 

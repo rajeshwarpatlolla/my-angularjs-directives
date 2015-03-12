@@ -193,7 +193,10 @@ $scope.dateString = 'Jan 1, 2015';
 ### ionic-time-picker
 #### Description
 It was initially implemented as a directive and later converted to a **bower component**.
+
 You can check out the bower component [here](https://github.com/rajeshwarpatlolla/ionic-timepicker)
+
+It works in Ionic frameworks applications.
 
 [Demo](http://rajeshwarpatlolla.github.io/TimePickerForIonicFramework/demo)
 

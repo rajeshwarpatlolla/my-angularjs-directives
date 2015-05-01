@@ -7,7 +7,7 @@ While i was working on few projects, i have come across few situations where i h
 - [standard-time-meridian](#standard-time-meridian)
 - [standard-time-no-meridian](#standard-time-no-meridian)
 - [date-string-to-epoch](#date-string-to-epoch)
-- [ionic-time-picker](#ionic-time-picker)
+- [ionic-timepicker](#ionic-timepicker)
 - [tooltip-follow-cursor](#tooltip-follow-cursor)
 - [check-with-current-time](#check-with-current-time)
 
@@ -190,7 +190,7 @@ $scope.dateString = 'Jan 1, 2015';
 
 *[Back to top](#description)*
 
-### ionic-time-picker
+### ionic-timepicker
 #### Description
 It was initially implemented as a directive and later converted to a **bower component**.
 
@@ -207,9 +207,9 @@ $scope.epochTime = 12600;
  
 ##### HTML
 ````html
-<ionic-time-picker etime="epochTime" format="12" step="15">    
+<ionic-timepicker etime="epochTime" format="12" step="15">    
     {{epochTime}}
-</ionic-time-picker>
+</ionic-timepicker>
 ````
 
 ##### Directive
@@ -306,7 +306,7 @@ $scope.epochTime = 12600;
           };
 
           $ionicPopup.show({
-            templateUrl: '../templates/time-picker-12-hour.html',
+            templateUrl: '../templates/timepicker-12-hour.html',
             title: '<strong>12-Hour Format</strong>',
             subTitle: '',
             scope: scope,
@@ -345,7 +345,7 @@ $scope.epochTime = 12600;
           scope.time.minutes = (objDate.getUTCMinutes());
 
           $ionicPopup.show({
-            templateUrl: '../templates/time-picker-24-hour.html',
+            templateUrl: '../templates/timepicker-24-hour.html',
             title: '<strong>24-Hour Format</strong>',
             subTitle: '',
             scope: scope,

@@ -8,6 +8,7 @@ While i was working on few projects, i have come across few situations where i h
 - [standard-time-no-meridian](#standard-time-no-meridian)
 - [date-string-to-epoch](#date-string-to-epoch)
 - [ionic-timepicker](#ionic-timepicker)
+- [ionic-datepicker](#ionic-datepicker)
 - [tooltip-follow-cursor](#tooltip-follow-cursor)
 - [check-with-current-time](#check-with-current-time)
 
@@ -199,6 +200,194 @@ You can check out the bower component [here](https://github.com/rajeshwarpatloll
 It works in Ionic frameworks applications.
 
 [Demo](http://rajeshwarpatlolla.github.io/TimePickerForIonicFramework/demo)
+
+##### Controller
+````javascript
+$scope.epochTime = 12600;
+ ````
+ 
+##### HTML
+````html
+<ionic-timepicker etime="epochTime" format="12" step="15">    
+    {{epochTime}}
+</ionic-timepicker>
+````
+
+##### Directive
+````javascript
+.directive('ionicTimePicker', function($ionicPopup) {
+  return {
+    restrict: 'AE',
+    replace: true,
+    scope: {
+      etime: '=etime',
+      format: '=format',
+      step: '=step'
+    },
+    link: function(scope, element, attrs) {
+
+      element.on("click", function() {
+
+        var obj = {
+          epochTime: scope.etime,
+          step: scope.step,
+          format: scope.format
+        };
+
+        scope.time = {
+          hours: 0,
+          minutes: 0,
+          meridian: ""
+        };
+
+        var objDate = new Date(obj.epochTime * 1000); // Epoch time in milliseconds.
+
+        scope.increaseHours = function() {
+          if (obj.format == 12) {
+            if (scope.time.hours != 12) {
+              scope.time.hours += 1;
+            } else {
+              scope.time.hours = 1;
+            }
+          }
+          if (obj.format == 24) {
+            if (scope.time.hours != 23) {
+              scope.time.hours += 1;
+            } else {
+              scope.time.hours = 0;
+            }
+          }
+        };
+
+        scope.decreaseHours = function() {
+          if (obj.format == 12) {
+            if (scope.time.hours > 1) {
+              scope.time.hours -= 1;
+            } else {
+              scope.time.hours = 12;
+            }
+          }
+          if (obj.format == 24) {
+            if (scope.time.hours > 0) {
+              scope.time.hours -= 1;
+            } else {
+              scope.time.hours = 23;
+            }
+          }
+        };
+
+        scope.increaseMinutes = function() {
+          if (scope.time.minutes != (60 - obj.step)) {
+            scope.time.minutes += obj.step;
+          } else {
+            scope.time.minutes = 0;
+          }
+        };
+
+        scope.decreaseMinutes = function() {
+          if (scope.time.minutes != 0) {
+            scope.time.minutes -= obj.step;
+          } else {
+            scope.time.minutes = 60 - obj.step;
+          }
+        };
+
+        if (obj.format == 12) {
+
+          scope.time.meridian = (objDate.getUTCHours() >= 12) ? "PM" : "AM";
+          scope.time.hours = (objDate.getUTCHours() > 12) ? ((objDate.getUTCHours() - 12)) : (objDate.getUTCHours());
+          scope.time.minutes = (objDate.getUTCMinutes());
+
+          if (scope.time.hours == 0 && scope.time.meridian == "AM") {
+            scope.time.hours = 12;
+          }
+
+          scope.changeMeridian = function() {
+            scope.time.meridian = (scope.time.meridian === "AM") ? "PM" : "AM";
+          };
+
+          $ionicPopup.show({
+            templateUrl: '../templates/timepicker-12-hour.html',
+            title: '<strong>12-Hour Format</strong>',
+            subTitle: '',
+            scope: scope,
+            buttons: [{
+              text: 'Cancel'
+            }, {
+              text: 'Set',
+              type: 'button-positive',
+              onTap: function(e) {
+
+                scope.loadingContent = true;
+
+                var totalSec = 0;
+
+                if (scope.time.hours != 12) {
+                  totalSec = (scope.time.hours * 60 * 60) + (scope.time.minutes * 60);
+                } else {
+                  totalSec = scope.time.minutes * 60;
+                }
+
+                if (scope.time.meridian === "AM") {
+                  totalSec += 0;
+                } else if (scope.time.meridian === "PM") {
+                  totalSec += 43200;
+                }
+                scope.etime = totalSec;
+              }
+            }]
+          })
+
+        }
+
+        if (obj.format == 24) {
+
+          scope.time.hours = (objDate.getUTCHours());
+          scope.time.minutes = (objDate.getUTCMinutes());
+
+          $ionicPopup.show({
+            templateUrl: '../templates/timepicker-24-hour.html',
+            title: '<strong>24-Hour Format</strong>',
+            subTitle: '',
+            scope: scope,
+            buttons: [{
+              text: 'Cancel'
+            }, {
+              text: 'Set',
+              type: 'button-positive',
+              onTap: function(e) {
+
+                scope.loadingContent = true;
+
+                var totalSec = 0;
+
+                if (scope.time.hours != 24) {
+                  totalSec = (scope.time.hours * 60 * 60) + (scope.time.minutes * 60);
+                } else {
+                  totalSec = scope.time.minutes * 60;
+                }
+                scope.etime = totalSec;
+              }
+            }]
+          })
+        }
+      });
+    }
+  };
+});
+````
+
+*[Back to top](#description)*
+
+### ionic-datepicker
+#### Description
+This is a **ionic-datepicker** bower component which can be used with any Ionic framework's application.
+
+You can check out the bower component [here](https://github.com/rajeshwarpatlolla/ionic-datepicker)
+
+It works in Ionic frameworks applications.
+
+[Demo](http://rajeshwarpatlolla.github.io/DatePickerForIonicFramework/demo/)
 
 ##### Controller
 ````javascript

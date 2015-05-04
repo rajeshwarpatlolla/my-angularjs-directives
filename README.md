@@ -622,4 +622,6 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 
 #### Contact
 
-- [Facebook](https://www.facebook.com/rajeshwarpatlolla)
+- **Gmail**     : https://www.facebook.com/rajeshwarpatlolla
+- **Facebook**    : https://www.facebook.com/rajeshwarpatlolla
+- **Twitter**   : https://twitter.com/rajeshwar_9032

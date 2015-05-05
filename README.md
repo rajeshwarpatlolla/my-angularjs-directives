@@ -209,7 +209,8 @@ $scope.epochTime = 12600;
 ##### HTML
 ````html
 <ionic-timepicker etime="epochTime" format="12" step="15">    
-    {{epochTime}}
+    <button class="button button-block button-positive"> {{epochTime}} </button>
+
 </ionic-timepicker>
 ````
 

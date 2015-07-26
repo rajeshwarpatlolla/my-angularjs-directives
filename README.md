@@ -1,6 +1,6 @@
 # Description
 
-While i was working on few projects, i have come across few situations where i had to write some directives. Here i want to mention few of the directives here. These might be useful for you. I am mentioning few directives here, so that you don't need to search for these directives at some other place. Each and every directive has a **demo** link, so that you can check oout how each directive works.
+While i was working on few projects, i have come across few situations where i had to write some directives. Here i want to list few of the directives. These might be useful for you. I am mentioning few directives here, so that you don't need to search for these directives at some other place. Each and every directive has a **demo** link, so that you can check oout how each directive works.
 
 ## List of my directives
 

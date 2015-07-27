@@ -11,6 +11,7 @@ While i was working on few projects, i have come across few situations where i h
 - [ionic-datepicker](#ionic-datepicker)
 - [tooltip-follow-cursor](#tooltip-follow-cursor)
 - [check-with-current-time](#check-with-current-time)
+- [ionic-string-to-html](#ionic-string-to-html)
 
 
 ### standard-time-meridian
@@ -615,6 +616,43 @@ A direcive which compares a time string(11:12 PM), with the current time.
 ````
 
 *[Back to top](#description)*
+
+### ionic-string-to-html
+#### Description 
+Converts String to HTML markup and applies the styling.
+
+[Demo](http://codepen.io/rajeshwarpatlolla/pen/jPpVze?editors=101)
+
+##### Controller
+Inject `$sce` in to the controller.
+````javascript
+$scope.myText = '<ion-list><ion-item>One</ion-item><ion-item>Two</ion-item><ion-item>Three</ion-item></ion-list>';
+    $scope.myText = $sce.trustAsHtml($scope.myText);
+````
+##### HTML
+````HTML
+<div stringtohtml inputstring="myText"></div>
+````
+
+##### Directive
+````javascript
+.directive('stringtohtml', ['$compile', function($compile) {
+    return function(scope, element, attrs) {
+      scope.$watch(
+        function(scope) {
+          return scope.$eval(attrs.inputstring);
+        },
+        function(value) {
+          element.html(value);
+          $compile(element.contents())(scope);
+        }
+      );
+    };
+  }])
+````
+
+*[Back to top](#description)*
+
 
 #### NOTE
 Copyright (c) 2015 [Rajeshwar Patlolla](https://github.com/rajeshwarpatlolla)

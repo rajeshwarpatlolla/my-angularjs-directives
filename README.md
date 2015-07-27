@@ -627,16 +627,16 @@ Converts String to HTML markup and applies the styling.
 Inject `$sce` in to the controller.
 ````javascript
 $scope.myText = '<ion-list><ion-item>One</ion-item><ion-item>Two</ion-item><ion-item>Three</ion-item></ion-list>';
-    $scope.myText = $sce.trustAsHtml($scope.myText);
+$scope.myText = $sce.trustAsHtml($scope.myText);
 ````
 ##### HTML
 ````HTML
-<div stringtohtml inputstring="myText"></div>
+<div ionicstringtohtml inputstring="myText"></div>
 ````
 
 ##### Directive
 ````javascript
-.directive('stringtohtml', ['$compile', function($compile) {
+.directive('ionicstringtohtml', ['$compile', function($compile) {
     return function(scope, element, attrs) {
       scope.$watch(
         function(scope) {

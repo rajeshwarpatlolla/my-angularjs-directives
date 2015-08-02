@@ -542,20 +542,18 @@ It works in Ionic frameworks applications.
 
 ##### Controller
 ````javascript
-	$scope.myTitle = 'IONIC RATINGS DEMO';
-
-    $scope.ratingsObject = {
-	    iconOn: 'ion-ios-star',
-    	iconOff: 'ion-ios-star-outline',
-    	iconOnColor: 'rgb(200, 200, 100)',
-    	iconOffColor: 'rgb(200, 100, 100)',
-    	rating: 3,
-    	minRating: 1,
-    	callback: function(rating) {
-      		$scope.ratingsCallback(rating);
-    	}
-    };
- ````
+$scope.ratingsObject = {
+	iconOn: 'ion-ios-star',
+   	iconOff: 'ion-ios-star-outline',
+   	iconOnColor: 'rgb(200, 200, 100)',
+   	iconOffColor: 'rgb(200, 100, 100)',
+  	rating: 3,
+   	minRating: 1,
+   	callback: function(rating) {
+   		$scope.ratingsCallback(rating);
+    }
+};
+`````
  
 ##### HTML
 ````html

@@ -553,6 +553,10 @@ $scope.ratingsObject = {
    		$scope.ratingsCallback(rating);
     }
 };
+
+$scope.ratingsCallback = function(rating) {
+    console.log('Selected rating is : ', rating);
+};
 `````
  
 ##### HTML

@@ -705,8 +705,8 @@ A direcive which compares a time string(11:12 PM), with the current time.
       timeArray[0] = parseInt(timeArray[0]);
       timeArray[1] = parseInt(timeArray[1]);
 
-      if (timeArray[2] === 'PM') {
-        timeArray[0] += 12;
+      if (timeArray[2] === 'PM' && timeArray[0]!==12) {
+		timeArray[0] += 12;
       }
 
       if (presentHours < timeArray[0]) {
